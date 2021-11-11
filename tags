@@ -1,0 +1,101 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+-cov	Makefile	/^	py.test --cov=q2_cual_id$/;"	m
+Command	versioneer.py	/^    from distutils.core import Command$/;"	i
+HANDLERS	versioneer.py	/^HANDLERS = {}$/;"	v
+LONG_VERSION_PY	versioneer.py	/^LONG_VERSION_PY = {}$/;"	v
+NotThisMethod	versioneer.py	/^class NotThisMethod(Exception):$/;"	c
+PYTHON	Makefile	/^PYTHON ?= python$/;"	m
+VersioneerBadRootError	versioneer.py	/^class VersioneerBadRootError(Exception):$/;"	c
+VersioneerConfig	versioneer.py	/^class VersioneerConfig:$/;"	c
+_build_exe	versioneer.py	/^        from cx_Freeze.dist import build_exe as _build_exe$/;"	i
+_build_py	versioneer.py	/^        from distutils.command.build_py import build_py as _build_py$/;"	i
+_build_py	versioneer.py	/^        from setuptools.command.build_py import build_py as _build_py$/;"	i
+_py2exe	versioneer.py	/^            from py2exe.build_exe import py2exe as _py2exe  # py2$/;"	i
+_py2exe	versioneer.py	/^            from py2exe.distutils_buildexe import py2exe as _py2exe  # py3$/;"	i
+_sdist	versioneer.py	/^        from distutils.command.sdist import sdist as _sdist$/;"	i
+_sdist	versioneer.py	/^        from setuptools.command.sdist import sdist as _sdist$/;"	i
+author	setup.py	/^    author="Anton Hibl",$/;"	v
+author_email	setup.py	/^    author_email="antonhibl11@gmail.com",$/;"	v
+boolean_options	versioneer.py	/^        boolean_options = []$/;"	v	class:get_cmdclass.cmd_version
+check_ids	q2_cual_id/actions.py	/^def check_ids():$/;"	f
+cmd	versioneer.py	/^    cmd = sys.argv[1]$/;"	v
+cmd_build_exe	versioneer.py	/^        class cmd_build_exe(_build_exe):$/;"	c	class:get_cmdclass.cmd_build_py
+cmd_build_py	versioneer.py	/^    class cmd_build_py(_build_py):$/;"	c	function:get_cmdclass
+cmd_py2exe	versioneer.py	/^        class cmd_py2exe(_py2exe):$/;"	c	class:get_cmdclass.cmd_build_py
+cmd_sdist	versioneer.py	/^    class cmd_sdist(_sdist):$/;"	c	function:get_cmdclass
+cmd_version	versioneer.py	/^    class cmd_version(Command):$/;"	c	function:get_cmdclass
+cmdclass	setup.py	/^    cmdclass=versioneer.get_cmdclass(),$/;"	v
+configparser	versioneer.py	/^    import ConfigParser as configparser$/;"	i
+configparser	versioneer.py	/^    import configparser$/;"	i
+create_ids	q2_cual_id/actions.py	/^from cualid.mint import create_ids$/;"	i
+cualid	q2_cual_id/actions.py	/^import cualid$/;"	i
+decorate	versioneer.py	/^    def decorate(f):$/;"	f	function:register_vcs_handler
+description	setup.py	/^    description="Global 'Cual' ID toolkit plugin for QIIME2.",$/;"	v
+description	versioneer.py	/^        description = "report generated version string"$/;"	v	class:get_cmdclass.cmd_version
+do_setup	versioneer.py	/^def do_setup():$/;"	f
+do_vcs_install	versioneer.py	/^def do_vcs_install(manifest_in, versionfile_source, ipy):$/;"	f
+entry_points	setup.py	/^    entry_points={$/;"	v
+errno	versioneer.py	/^import errno$/;"	i
+errors	versioneer.py	/^        errors = do_setup()$/;"	v
+finalize_options	versioneer.py	/^        def finalize_options(self):$/;"	m	class:get_cmdclass.cmd_version
+find_packages	setup.py	/^from setuptools import setup, find_packages$/;"	i
+fix_ids	q2_cual_id/actions.py	/^from cualid.fix import fix_ids, format_output,$/;"	i
+format_output	q2_cual_id/actions.py	/^from cualid.fix import fix_ids, format_output,$/;"	i
+generate_barcodes	q2_cual_id/actions.py	/^def generate_barcodes():$/;"	f
+generate_id	q2_cual_id/actions.py	/^def generate_id($/;"	f
+get	versioneer.py	/^    def get(parser, name):$/;"	f	function:get_config_from_root
+get_barcodes	q2_cual_id/actions.py	/^from cualid.label import get_barcodes$/;"	i
+get_cmdclass	versioneer.py	/^def get_cmdclass():$/;"	f
+get_config_from_root	versioneer.py	/^def get_config_from_root(root):$/;"	f
+get_root	versioneer.py	/^def get_root():$/;"	f
+get_version	versioneer.py	/^def get_version():$/;"	f
+get_versions	versioneer.py	/^def get_versions(verbose=False):$/;"	f
+git_get_keywords	versioneer.py	/^def git_get_keywords(versionfile_abs):$/;"	f
+git_pieces_from_vcs	versioneer.py	/^def git_pieces_from_vcs(tag_prefix, root, verbose, run_command=run_command):$/;"	f
+git_versions_from_keywords	versioneer.py	/^def git_versions_from_keywords(keywords, tag_prefix, verbose):$/;"	f
+initialize_options	versioneer.py	/^        def initialize_options(self):$/;"	m	class:get_cmdclass.cmd_version
+json	versioneer.py	/^import json$/;"	i
+license	setup.py	/^    license='BSD-3-Clause',$/;"	v
+make_release_tree	versioneer.py	/^        def make_release_tree(self, base_dir, files):$/;"	m	class:get_cmdclass.cmd_sdist
+name	setup.py	/^    name="q2-cual-id",$/;"	v
+os	versioneer.py	/^import os$/;"	i
+package_data	setup.py	/^    package_data={$/;"	v
+packages	setup.py	/^    packages=find_packages(),$/;"	v
+plus_or_dot	versioneer.py	/^def plus_or_dot(pieces):$/;"	f
+print_function	versioneer.py	/^from __future__ import print_function$/;"	i
+py2	versioneer.py	/^            from py2exe.build_exe import py2exe as _py2exe  # py2$/;"	i
+py3	versioneer.py	/^            from py2exe.distutils_buildexe import py2exe as _py2exe  # py3$/;"	i
+re	versioneer.py	/^import re$/;"	i
+register_vcs_handler	versioneer.py	/^def register_vcs_handler(vcs, method):  # decorator$/;"	f
+render	versioneer.py	/^def render(pieces, style):$/;"	f
+render_git_describe	versioneer.py	/^def render_git_describe(pieces):$/;"	f
+render_git_describe_long	versioneer.py	/^def render_git_describe_long(pieces):$/;"	f
+render_pep440	versioneer.py	/^def render_pep440(pieces):$/;"	f
+render_pep440_old	versioneer.py	/^def render_pep440_old(pieces):$/;"	f
+render_pep440_post	versioneer.py	/^def render_pep440_post(pieces):$/;"	f
+render_pep440_pre	versioneer.py	/^def render_pep440_pre(pieces):$/;"	f
+run	versioneer.py	/^            def run(self):$/;"	m	class:get_cmdclass.cmd_build_py.cmd_build_exe
+run	versioneer.py	/^            def run(self):$/;"	m	class:get_cmdclass.cmd_build_py.cmd_py2exe
+run	versioneer.py	/^        def run(self):$/;"	m	class:get_cmdclass.cmd_build_py
+run	versioneer.py	/^        def run(self):$/;"	m	class:get_cmdclass.cmd_sdist
+run	versioneer.py	/^        def run(self):$/;"	m	class:get_cmdclass.cmd_version
+run_command	versioneer.py	/^def run_command(commands, args, cwd=None, verbose=False, hide_stderr=False,$/;"	f
+scan_setup_py	versioneer.py	/^def scan_setup_py():$/;"	f
+setup	setup.py	/^from setuptools import setup, find_packages$/;"	i
+subprocess	versioneer.py	/^import subprocess$/;"	i
+sys	versioneer.py	/^import sys$/;"	i
+url	setup.py	/^    url="https:\/\/qiime2.org",$/;"	v
+user_options	versioneer.py	/^        user_options = []$/;"	v	class:get_cmdclass.cmd_version
+version	setup.py	/^    version=versioneer.get_version(),$/;"	v
+versioneer	setup.py	/^import versioneer$/;"	i
+versioneer	versioneer.py	/^            if "import versioneer" in line:$/;"	i
+versioneer	versioneer.py	/^        print(" import versioneer")$/;"	i
+versions_from_file	versioneer.py	/^def versions_from_file(filename):$/;"	f
+versions_from_parentdir	versioneer.py	/^def versions_from_parentdir(parentdir_prefix, root, verbose):$/;"	f
+write_to_version_file	versioneer.py	/^def write_to_version_file(filename, versions):$/;"	f
+zip_safe	setup.py	/^    zip_safe=False,$/;"	v
