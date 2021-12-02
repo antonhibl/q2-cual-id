@@ -5,7 +5,7 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 -cov	Makefile	/^	py.test --cov=q2_cual_id$/;"	m
-Choices	q2_cual_id/plugin_setup.py	/^from qiime2.plugin import Str, Choices, Properties, Metadata$/;"	i
+Choices	q2_cual_id/plugin_setup.py	/^from qiime2.plugin import Plugin, Str, Choices, Properties, Metadata$/;"	i
 Command	versioneer.py	/^    from distutils.core import Command$/;"	i
 CualArtifact	q2_cual_id/actions.py	/^from cualtypes import CualArtifact$/;"	i
 CualArtifact	q2_cual_id/pipelines.py	/^from cualtypes import CualArtifact$/;"	i
@@ -16,12 +16,13 @@ CualIDFile	cual_types.py	/^class CualIDFile(model.TextFileFormat):$/;"	c
 CualIDs	cual_types.py	/^CualIDs = SemanticType('CualIDs')$/;"	v
 HANDLERS	versioneer.py	/^HANDLERS = {}$/;"	v
 LONG_VERSION_PY	versioneer.py	/^LONG_VERSION_PY = {}$/;"	v
-Metadata	q2_cual_id/plugin_setup.py	/^from qiime2.plugin import Str, Choices, Properties, Metadata$/;"	i
+Metadata	q2_cual_id/plugin_setup.py	/^from qiime2.plugin import Plugin, Str, Choices, Properties, Metadata$/;"	i
 NotThisMethod	versioneer.py	/^class NotThisMethod(Exception):$/;"	c
 PYTHON	Makefile	/^PYTHON ?= python$/;"	m
-Properties	q2_cual_id/plugin_setup.py	/^from qiime2.plugin import Str, Choices, Properties, Metadata$/;"	i
+Plugin	q2_cual_id/plugin_setup.py	/^from qiime2.plugin import Plugin, Str, Choices, Properties, Metadata$/;"	i
+Properties	q2_cual_id/plugin_setup.py	/^from qiime2.plugin import Plugin, Str, Choices, Properties, Metadata$/;"	i
 SemanticType	cual_types.py	/^from qiime2.plugin import SemanticType$/;"	i
-Str	q2_cual_id/plugin_setup.py	/^from qiime2.plugin import Str, Choices, Properties, Metadata$/;"	i
+Str	q2_cual_id/plugin_setup.py	/^from qiime2.plugin import Plugin, Str, Choices, Properties, Metadata$/;"	i
 VersioneerBadRootError	versioneer.py	/^class VersioneerBadRootError(Exception):$/;"	c
 VersioneerConfig	versioneer.py	/^class VersioneerConfig:$/;"	c
 _build_exe	versioneer.py	/^        from cx_Freeze.dist import build_exe as _build_exe$/;"	i
@@ -75,7 +76,7 @@ function	q2_cual_id/plugin_setup.py	/^        function=q2_cual_id.actions.check_
 function	q2_cual_id/plugin_setup.py	/^        function=q2_cual_id.actions.cual_transform,$/;"	v
 function	q2_cual_id/plugin_setup.py	/^        function=q2_cual_id.actions.generate_barcodes,$/;"	v
 function	q2_cual_id/plugin_setup.py	/^        function=q2_cual_id.actions.generate_id,$/;"	v
-generate_barcodes	q2_cual_id/actions.py	/^def generate_barcodes()->CualVisualizer:$/;"	f
+generate_barcodes	q2_cual_id/actions.py	/^def generate_barcodes($/;"	f
 generate_ids	q2_cual_id/actions.py	/^def generate_ids($/;"	f
 get	versioneer.py	/^    def get(parser, name):$/;"	f	function:get_config_from_root
 get_barcodes	q2_cual_id/actions.py	/^from cualid.label import get_barcodes$/;"	i
@@ -88,6 +89,7 @@ get_versions	versioneer.py	/^def get_versions(verbose=False):$/;"	f
 git_get_keywords	versioneer.py	/^def git_get_keywords(versionfile_abs):$/;"	f
 git_pieces_from_vcs	versioneer.py	/^def git_pieces_from_vcs(tag_prefix, root, verbose, run_command=run_command):$/;"	f
 git_versions_from_keywords	versioneer.py	/^def git_versions_from_keywords(keywords, tag_prefix, verbose):$/;"	f
+importlib	q2_cual_id/plugin_setup.py	/^import importlib$/;"	i
 initialize_options	versioneer.py	/^        def initialize_options(self):$/;"	m	class:get_cmdclass.cmd_version
 input_descriptions	q2_cual_id/plugin_setup.py	/^        input_descriptions={'existing_ids': ''},$/;"	v
 input_descriptions	q2_cual_id/plugin_setup.py	/^        input_descriptions={},$/;"	v
@@ -117,6 +119,8 @@ parameters	q2_cual_id/plugin_setup.py	/^        parameters={'n': NumberOfIDs,$/;
 parameters	q2_cual_id/plugin_setup.py	/^        parameters={},$/;"	v
 pipelines	q2_cual_id/plugin_setup.py	/^import q2_cual_id.pipelines$/;"	i
 plugin	cual_types.py	/^import qiime2.plugin.model as model$/;"	i
+plugin	q2_cual_id/actions.py	/^from q2_cual_id.plugin_setup import plugin$/;"	i
+plugin	q2_cual_id/plugin_setup.py	/^plugin = Plugin("cual-id",$/;"	v
 plugin_setup	q2_cual_id/plugin_setup.py	/^import q2_cual_id.plugin_setup$/;"	i
 plus_or_dot	versioneer.py	/^def plus_or_dot(pieces):$/;"	f
 print_function	versioneer.py	/^from __future__ import print_function$/;"	i
@@ -148,11 +152,13 @@ subprocess	versioneer.py	/^import subprocess$/;"	i
 sys	versioneer.py	/^import sys$/;"	i
 url	setup.py	/^    url="https:\/\/qiime2.org",$/;"	v
 user_options	versioneer.py	/^        user_options = []$/;"	v	class:get_cmdclass.cmd_version
+version	q2_cual_id/plugin_setup.py	/^                version="0.0.1.dev",$/;"	v
 version	setup.py	/^    version=versioneer.get_version(),$/;"	v
 versioneer	setup.py	/^import versioneer$/;"	i
 versioneer	versioneer.py	/^            if "import versioneer" in line:$/;"	i
 versioneer	versioneer.py	/^        print(" import versioneer")$/;"	i
 versions_from_file	versioneer.py	/^def versions_from_file(filename):$/;"	f
 versions_from_parentdir	versioneer.py	/^def versions_from_parentdir(parentdir_prefix, root, verbose):$/;"	f
+website	q2_cual_id/plugin_setup.py	/^                website="https:\/\/github.com\/antonhibl\/q2-cual-id")$/;"	v
 write_to_version_file	versioneer.py	/^def write_to_version_file(filename, versions):$/;"	f
 zip_safe	setup.py	/^    zip_safe=False,$/;"	v

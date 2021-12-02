@@ -6,15 +6,28 @@
 # The full license is in the file LICENSE, distributed w/ this software.
 # ----------------------------------------------------------------------
 
+# Imports and Dependencies
+import importlib
 from cual_types import CualID, CualArtifact
-
-from qiime2.plugin import Str, Choices, Properties, Metadata
-
+from qiime2.plugin import Plugin, Str, Choices, Properties, Metadata
 import q2_cual_id
 import q2_cual_id.actions
 import q2_cual_id.pipelines
 import q2_cual_id.plugin_setup
 
+# Register the plugin
+plugin = Plugin("cual-id",
+                version="0.0.1.dev",
+                website="https://github.com/antonhibl/q2-cual-id")
+
+importlib.import_module("cualid")
+
+# Registering formats for directory structure, and short/long file formats
+plugin.register_formats(CualDirFormat, CualFile, LongCualFile)
+
+#plugin.register_semantic_types(IDs, WideIDs)
+
+# ID Generation Function
 plugin.methods.register_function(
         function=q2_cual_id.actions.generate_id,
         inputs={'existing_ids': CualArtifact},
@@ -37,6 +50,7 @@ plugin.methods.register_function(
                      "bio-informatics and computing research.")
         )
 
+# Cual Cleaning Function
 plugin.methods.register_function(
         function=q2_cual_id.actions.check_ids,
         inputs={},
@@ -50,20 +64,21 @@ plugin.methods.register_function(
                      "then returns this fixed set to the user.")
         )
 
-plugin.methods.register_function(
+# Barcode Generation Function
+plugin.visualizers.register_function(
         function=q2_cual_id.actions.generate_barcodes,
         inputs={},
         parameters={},
         outputs=[()],
         input_descriptions={},
         parameter_descriptions={},
-        output_descriptions={},
         name='Cual ID Bar Encoder',
         description=("Creates a set of barcodes given an error-free"
                      "set of Cual IDs, returns this as a visualizer"
                      "to the user.")
         )
 
+# Cual Transformer Function
 plugin.methods.register_function(
         function=q2_cual_id.actions.cual_transform,
         inputs={},
@@ -76,3 +91,4 @@ plugin.methods.register_function(
         description=("Parses longer globally unique IDs into their"
                      "shortened Cual IDs.")
         )
+
