@@ -1,164 +1,185 @@
-!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
-!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
-!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
-!_TAG_PROGRAM_NAME	Exuberant Ctags	//
-!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.8	//
--cov	Makefile	/^	py.test --cov=q2_cual_id$/;"	m
-Choices	q2_cual_id/plugin_setup.py	/^from qiime2.plugin import Plugin, Str, Choices, Properties, Metadata$/;"	i
-Command	versioneer.py	/^    from distutils.core import Command$/;"	i
-CualArtifact	q2_cual_id/actions.py	/^from cualtypes import CualArtifact$/;"	i
-CualArtifact	q2_cual_id/pipelines.py	/^from cualtypes import CualArtifact$/;"	i
-CualArtifact	q2_cual_id/plugin_setup.py	/^from cual_types import CualID, CualArtifact$/;"	i
-CualFolder	cual_types.py	/^class CualFolder(model.SingleFileDirectoryFormat):$/;"	c
-CualID	q2_cual_id/plugin_setup.py	/^from cual_types import CualID, CualArtifact$/;"	i
-CualIDFile	cual_types.py	/^class CualIDFile(model.TextFileFormat):$/;"	c
-CualIDs	cual_types.py	/^CualIDs = SemanticType('CualIDs')$/;"	v
-HANDLERS	versioneer.py	/^HANDLERS = {}$/;"	v
-LONG_VERSION_PY	versioneer.py	/^LONG_VERSION_PY = {}$/;"	v
-Metadata	q2_cual_id/plugin_setup.py	/^from qiime2.plugin import Plugin, Str, Choices, Properties, Metadata$/;"	i
-NotThisMethod	versioneer.py	/^class NotThisMethod(Exception):$/;"	c
-PYTHON	Makefile	/^PYTHON ?= python$/;"	m
-Plugin	q2_cual_id/plugin_setup.py	/^from qiime2.plugin import Plugin, Str, Choices, Properties, Metadata$/;"	i
-Properties	q2_cual_id/plugin_setup.py	/^from qiime2.plugin import Plugin, Str, Choices, Properties, Metadata$/;"	i
-SemanticType	cual_types.py	/^from qiime2.plugin import SemanticType$/;"	i
-Str	q2_cual_id/plugin_setup.py	/^from qiime2.plugin import Plugin, Str, Choices, Properties, Metadata$/;"	i
-VersioneerBadRootError	versioneer.py	/^class VersioneerBadRootError(Exception):$/;"	c
-VersioneerConfig	versioneer.py	/^class VersioneerConfig:$/;"	c
-_build_exe	versioneer.py	/^        from cx_Freeze.dist import build_exe as _build_exe$/;"	i
-_build_py	versioneer.py	/^        from distutils.command.build_py import build_py as _build_py$/;"	i
-_build_py	versioneer.py	/^        from setuptools.command.build_py import build_py as _build_py$/;"	i
-_py2exe	versioneer.py	/^            from py2exe.build_exe import py2exe as _py2exe  # py2$/;"	i
-_py2exe	versioneer.py	/^            from py2exe.distutils_buildexe import py2exe as _py2exe  # py3$/;"	i
-_sdist	versioneer.py	/^        from distutils.command.sdist import sdist as _sdist$/;"	i
-_sdist	versioneer.py	/^        from setuptools.command.sdist import sdist as _sdist$/;"	i
-_validate_	cual_types.py	/^    def _validate_(self, level='min'):$/;"	m	class:CualIDFile
-actions	q2_cual_id/plugin_setup.py	/^import q2_cual_id.actions$/;"	i
-author	setup.py	/^    author="Anton Hibl",$/;"	v
-author_email	setup.py	/^    author_email="antonhibl11@gmail.com",$/;"	v
-boolean_options	versioneer.py	/^        boolean_options = []$/;"	v	class:get_cmdclass.cmd_version
-check_ids	q2_cual_id/actions.py	/^def check_ids($/;"	f
-cmd	versioneer.py	/^    cmd = sys.argv[1]$/;"	v
-cmd_build_exe	versioneer.py	/^        class cmd_build_exe(_build_exe):$/;"	c	class:get_cmdclass.cmd_build_py
-cmd_build_py	versioneer.py	/^    class cmd_build_py(_build_py):$/;"	c	function:get_cmdclass
-cmd_py2exe	versioneer.py	/^        class cmd_py2exe(_py2exe):$/;"	c	class:get_cmdclass.cmd_build_py
-cmd_sdist	versioneer.py	/^    class cmd_sdist(_sdist):$/;"	c	function:get_cmdclass
-cmd_version	versioneer.py	/^    class cmd_version(Command):$/;"	c	function:get_cmdclass
-cmdclass	setup.py	/^    cmdclass=versioneer.get_cmdclass(),$/;"	v
-configparser	versioneer.py	/^    import ConfigParser as configparser$/;"	i
-configparser	versioneer.py	/^    import configparser$/;"	i
-create_ids	q2_cual_id/actions.py	/^from cualid.mint import create_ids$/;"	i
-create_ids	q2_cual_id/pipelines.py	/^from cualid.mint import create_ids$/;"	i
-cual_handler	q2_cual_id/pipelines.py	/^def cual_handler( output_path: str, number_of_ids: int, $/;"	f
-cual_ids	cual_types.py	/^    cual_ids = model.TextFileFormat('ids.txt', format=CualIDFile)$/;"	v	class:CualFolder
-cual_transform	q2_cual_id/actions.py	/^def cual_transform()->CualFolder:$/;"	f
-cualid	q2_cual_id/actions.py	/^import cualid$/;"	i
-cualid	q2_cual_id/pipelines.py	/^import cualid$/;"	i
-decorate	versioneer.py	/^    def decorate(f):$/;"	f	function:register_vcs_handler
-description	q2_cual_id/plugin_setup.py	/^        description=("Checks and fixes a given set of Cual IDs,"$/;"	v
-description	q2_cual_id/plugin_setup.py	/^        description=("Creates a set of barcodes given an error-free"$/;"	v
-description	q2_cual_id/plugin_setup.py	/^        description=("Generates a set of Cual IDs for use in"$/;"	v
-description	q2_cual_id/plugin_setup.py	/^        description=("Parses longer globally unique IDs into their"$/;"	v
-description	setup.py	/^    description="Global 'Cual' ID toolkit plugin for QIIME2.",$/;"	v
-description	versioneer.py	/^        description = "report generated version string"$/;"	v	class:get_cmdclass.cmd_version
-do_setup	versioneer.py	/^def do_setup():$/;"	f
-do_vcs_install	versioneer.py	/^def do_vcs_install(manifest_in, versionfile_source, ipy):$/;"	f
-entry_points	setup.py	/^    entry_points={$/;"	v
-errno	versioneer.py	/^import errno$/;"	i
-errors	versioneer.py	/^        errors = do_setup()$/;"	v
-finalize_options	versioneer.py	/^        def finalize_options(self):$/;"	m	class:get_cmdclass.cmd_version
-find_packages	setup.py	/^from setuptools import setup, find_packages$/;"	i
-fix_ids	q2_cual_id/actions.py	/^from cualid.fix import fix_ids, format_output,$/;"	i
-fix_ids	q2_cual_id/pipelines.py	/^from cualid.fix import fix_ids, format_output$/;"	i
-format_output	q2_cual_id/actions.py	/^from cualid.fix import fix_ids, format_output,$/;"	i
-format_output	q2_cual_id/pipelines.py	/^from cualid.fix import fix_ids, format_output$/;"	i
-function	q2_cual_id/plugin_setup.py	/^        function=q2_cual_id.actions.check_ids,$/;"	v
-function	q2_cual_id/plugin_setup.py	/^        function=q2_cual_id.actions.cual_transform,$/;"	v
-function	q2_cual_id/plugin_setup.py	/^        function=q2_cual_id.actions.generate_barcodes,$/;"	v
-function	q2_cual_id/plugin_setup.py	/^        function=q2_cual_id.actions.generate_id,$/;"	v
-generate_barcodes	q2_cual_id/actions.py	/^def generate_barcodes($/;"	f
-generate_ids	q2_cual_id/actions.py	/^def generate_ids($/;"	f
-get	versioneer.py	/^    def get(parser, name):$/;"	f	function:get_config_from_root
-get_barcodes	q2_cual_id/actions.py	/^from cualid.label import get_barcodes$/;"	i
-get_barcodes	q2_cual_id/pipelines.py	/^from cualid.label import get_barcodes$/;"	i
-get_cmdclass	versioneer.py	/^def get_cmdclass():$/;"	f
-get_config_from_root	versioneer.py	/^def get_config_from_root(root):$/;"	f
-get_root	versioneer.py	/^def get_root():$/;"	f
-get_version	versioneer.py	/^def get_version():$/;"	f
-get_versions	versioneer.py	/^def get_versions(verbose=False):$/;"	f
-git_get_keywords	versioneer.py	/^def git_get_keywords(versionfile_abs):$/;"	f
-git_pieces_from_vcs	versioneer.py	/^def git_pieces_from_vcs(tag_prefix, root, verbose, run_command=run_command):$/;"	f
-git_versions_from_keywords	versioneer.py	/^def git_versions_from_keywords(keywords, tag_prefix, verbose):$/;"	f
-importlib	q2_cual_id/plugin_setup.py	/^import importlib$/;"	i
-initialize_options	versioneer.py	/^        def initialize_options(self):$/;"	m	class:get_cmdclass.cmd_version
-input_descriptions	q2_cual_id/plugin_setup.py	/^        input_descriptions={'existing_ids': ''},$/;"	v
-input_descriptions	q2_cual_id/plugin_setup.py	/^        input_descriptions={},$/;"	v
-inputs	q2_cual_id/plugin_setup.py	/^        inputs={'existing_ids': CualArtifact},$/;"	v
-inputs	q2_cual_id/plugin_setup.py	/^        inputs={},$/;"	v
-json	versioneer.py	/^import json$/;"	i
-license	setup.py	/^    license='BSD-3-Clause',$/;"	v
-make_release_tree	versioneer.py	/^        def make_release_tree(self, base_dir, files):$/;"	m	class:get_cmdclass.cmd_sdist
-model	cual_types.py	/^import qiime2.plugin.model as model$/;"	i
-modified_ids	cual_types.py	/^    modified_ids = model.TextFileFormat($/;"	v	class:CualFolder
-name	q2_cual_id/plugin_setup.py	/^        name='Cual ID Bar Encoder',$/;"	v
-name	q2_cual_id/plugin_setup.py	/^        name='Cual ID Cleaner',$/;"	v
-name	q2_cual_id/plugin_setup.py	/^        name='Cual ID Generator',$/;"	v
-name	q2_cual_id/plugin_setup.py	/^        name='Cual ID Parser',$/;"	v
-name	setup.py	/^    name="q2-cual-id",$/;"	v
-os	cual_types.py	/^import os$/;"	i
-os	versioneer.py	/^import os$/;"	i
-output_descriptions	q2_cual_id/plugin_setup.py	/^        output_descriptions={'cual_ids': ''},$/;"	v
-output_descriptions	q2_cual_id/plugin_setup.py	/^        output_descriptions={},$/;"	v
-outputs	q2_cual_id/plugin_setup.py	/^        outputs=[('cual_ids', CualIDs)],$/;"	v
-outputs	q2_cual_id/plugin_setup.py	/^        outputs=[()],$/;"	v
-package_data	setup.py	/^    package_data={$/;"	v
-packages	setup.py	/^    packages=find_packages(),$/;"	v
-parameter_descriptions	q2_cual_id/plugin_setup.py	/^        parameter_descriptions={$/;"	v
-parameter_descriptions	q2_cual_id/plugin_setup.py	/^        parameter_descriptions={},$/;"	v
-parameters	q2_cual_id/plugin_setup.py	/^        parameters={'n': NumberOfIDs,$/;"	v
-parameters	q2_cual_id/plugin_setup.py	/^        parameters={},$/;"	v
-pipelines	q2_cual_id/plugin_setup.py	/^import q2_cual_id.pipelines$/;"	i
-plugin	cual_types.py	/^import qiime2.plugin.model as model$/;"	i
-plugin	q2_cual_id/actions.py	/^from q2_cual_id.plugin_setup import plugin$/;"	i
-plugin	q2_cual_id/plugin_setup.py	/^plugin = Plugin("cual-id",$/;"	v
-plugin_setup	q2_cual_id/plugin_setup.py	/^import q2_cual_id.plugin_setup$/;"	i
-plus_or_dot	versioneer.py	/^def plus_or_dot(pieces):$/;"	f
-print_function	versioneer.py	/^from __future__ import print_function$/;"	i
-py2	versioneer.py	/^            from py2exe.build_exe import py2exe as _py2exe  # py2$/;"	i
-py3	versioneer.py	/^            from py2exe.distutils_buildexe import py2exe as _py2exe  # py3$/;"	i
-q2_cual_id	q2_cual_id/plugin_setup.py	/^import q2_cual_id$/;"	i
-q2_cual_id	q2_cual_id/plugin_setup.py	/^import q2_cual_id.actions$/;"	i
-q2_cual_id	q2_cual_id/plugin_setup.py	/^import q2_cual_id.pipelines$/;"	i
-q2_cual_id	q2_cual_id/plugin_setup.py	/^import q2_cual_id.plugin_setup$/;"	i
-qiime2	cual_types.py	/^import qiime2.plugin.model as model$/;"	i
-re	versioneer.py	/^import re$/;"	i
-register_vcs_handler	versioneer.py	/^def register_vcs_handler(vcs, method):  # decorator$/;"	f
-render	versioneer.py	/^def render(pieces, style):$/;"	f
-render_git_describe	versioneer.py	/^def render_git_describe(pieces):$/;"	f
-render_git_describe_long	versioneer.py	/^def render_git_describe_long(pieces):$/;"	f
-render_pep440	versioneer.py	/^def render_pep440(pieces):$/;"	f
-render_pep440_old	versioneer.py	/^def render_pep440_old(pieces):$/;"	f
-render_pep440_post	versioneer.py	/^def render_pep440_post(pieces):$/;"	f
-render_pep440_pre	versioneer.py	/^def render_pep440_pre(pieces):$/;"	f
-run	versioneer.py	/^            def run(self):$/;"	m	class:get_cmdclass.cmd_build_py.cmd_build_exe
-run	versioneer.py	/^            def run(self):$/;"	m	class:get_cmdclass.cmd_build_py.cmd_py2exe
-run	versioneer.py	/^        def run(self):$/;"	m	class:get_cmdclass.cmd_build_py
-run	versioneer.py	/^        def run(self):$/;"	m	class:get_cmdclass.cmd_sdist
-run	versioneer.py	/^        def run(self):$/;"	m	class:get_cmdclass.cmd_version
-run_command	versioneer.py	/^def run_command(commands, args, cwd=None, verbose=False, hide_stderr=False,$/;"	f
-scan_setup_py	versioneer.py	/^def scan_setup_py():$/;"	f
-setup	setup.py	/^from setuptools import setup, find_packages$/;"	i
-subprocess	versioneer.py	/^import subprocess$/;"	i
-sys	versioneer.py	/^import sys$/;"	i
-url	setup.py	/^    url="https:\/\/qiime2.org",$/;"	v
-user_options	versioneer.py	/^        user_options = []$/;"	v	class:get_cmdclass.cmd_version
-version	q2_cual_id/plugin_setup.py	/^                version="0.0.1.dev",$/;"	v
-version	setup.py	/^    version=versioneer.get_version(),$/;"	v
-versioneer	setup.py	/^import versioneer$/;"	i
-versioneer	versioneer.py	/^            if "import versioneer" in line:$/;"	i
-versioneer	versioneer.py	/^        print(" import versioneer")$/;"	i
-versions_from_file	versioneer.py	/^def versions_from_file(filename):$/;"	f
-versions_from_parentdir	versioneer.py	/^def versions_from_parentdir(parentdir_prefix, root, verbose):$/;"	f
-website	q2_cual_id/plugin_setup.py	/^                website="https:\/\/github.com\/antonhibl\/q2-cual-id")$/;"	v
-write_to_version_file	versioneer.py	/^def write_to_version_file(filename, versions):$/;"	f
-zip_safe	setup.py	/^    zip_safe=False,$/;"	v
+
+Makefile,67
+PYTHON ?= pythonPYTHON3,60
+	py.test --cov=q2_cual_id-cov15,143
+
+q2_cual_id/plugin_setup.py,3086
+import importlibimportlib10,363
+from cual_types import CualID, CualArtifactCualID11,380
+from cual_types import CualID, CualArtifactCualArtifact11,380
+from qiime2.plugin import Plugin, Str, Choices, Properties, MetadataPlugin12,424
+from qiime2.plugin import Plugin, Str, Choices, Properties, MetadataStr12,424
+from qiime2.plugin import Plugin, Str, Choices, Properties, MetadataChoices12,424
+from qiime2.plugin import Plugin, Str, Choices, Properties, MetadataProperties12,424
+from qiime2.plugin import Plugin, Str, Choices, Properties, MetadataMetadata12,424
+import q2_cual_idq2_cual_id13,493
+import q2_cual_id.actionsq2_cual_id14,511
+import q2_cual_id.actionsactions14,511
+import q2_cual_id.pipelinesq2_cual_id15,537
+import q2_cual_id.pipelinespipelines15,537
+import q2_cual_id.plugin_setupq2_cual_id16,565
+import q2_cual_id.plugin_setupplugin_setup16,565
+plugin = Plugin("cual-id",plugin19,619
+                version="0.0.1.dev",version20,646
+                website="https://github.com/antonhibl/q2-cual-id")website21,683
+        function=q2_cual_id.actions.generate_id,function32,1031
+        inputs={'existing_ids': CualArtifact},inputs33,1080
+        parameters={'n': NumberOfIDs,parameters34,1127
+        outputs=[('cual_ids', CualIDs)],outputs39,1343
+        input_descriptions={'existing_ids': ''},input_descriptions40,1384
+        parameter_descriptions={parameter_descriptions41,1433
+        output_descriptions={'cual_ids': ''},output_descriptions47,1615
+        name='Cual ID Generator',name48,1661
+        description=("Generates a set of Cual IDs for use in"description49,1695
+        function=q2_cual_id.actions.check_ids,function55,1891
+        inputs={},inputs56,1938
+        parameters={},parameters57,1957
+        outputs=[()],outputs58,1980
+        input_descriptions={},input_descriptions59,2002
+        parameter_descriptions={},parameter_descriptions60,2033
+        output_descriptions={},output_descriptions61,2068
+        name='Cual ID Cleaner',name62,2100
+        description=("Checks and fixes a given set of Cual IDs,"description63,2132
+        function=q2_cual_id.actions.generate_barcodes,function69,2341
+        inputs={},inputs70,2396
+        parameters={},parameters71,2415
+        outputs=[()],outputs72,2438
+        input_descriptions={},input_descriptions73,2460
+        parameter_descriptions={},parameter_descriptions74,2491
+        name='Cual ID Bar Encoder',name75,2526
+        description=("Creates a set of barcodes given an error-free"description76,2562
+        function=q2_cual_id.actions.cual_transform,function83,2810
+        inputs={},inputs84,2862
+        parameters={},parameters85,2881
+        outputs=[()],outputs86,2904
+        input_descriptions={},input_descriptions87,2926
+        parameter_descriptions={},parameter_descriptions88,2957
+        output_descriptions={},output_descriptions89,2992
+        name='Cual ID Parser',name90,3024
+        description=("Parses longer globally unique IDs into their"description91,3055
+
+q2_cual_id/actions.py,556
+from q2_cual_id.plugin_setup import pluginplugin9,336
+import cualidcualid10,379
+from cualid.label import get_barcodesget_barcodes11,393
+from cualid.mint import create_idscreate_ids12,431
+from cualid.fix import fix_ids, format_output,fix_ids13,466
+from cualid.fix import fix_ids, format_output,format_output13,466
+from cualtypes import CualArtifactCualArtifact14,513
+def cual_transform()->CualFolder:cual_transform16,549
+def generate_ids(generate_ids23,820
+def generate_barcodes(generate_barcodes38,1226
+def check_ids(check_ids56,1771
+
+q2_cual_id/pipelines.py,398
+import cualidcualid9,336
+from cualid.label import get_barcodesget_barcodes10,350
+from cualid.mint import create_idscreate_ids11,388
+from cualid.fix import fix_ids, format_outputfix_ids12,423
+from cualid.fix import fix_ids, format_outputformat_output12,423
+from cualtypes import CualArtifactCualArtifact13,469
+def cual_handler( output_path: str, number_of_ids: int, cual_handler15,505
+
+cual_types.py,604
+import osos10,358
+import qiime2.plugin.model as modelqiime212,369
+import qiime2.plugin.model as modelplugin12,369
+import qiime2.plugin.model as modelmodel12,369
+from qiime2.plugin import SemanticTypeSemanticType13,405
+CualIDs = SemanticType('CualIDs')CualIDs16,491
+class CualIDFile(model.TextFileFormat):CualIDFile18,526
+    def _validate_(self, level='min'):_validate_19,566
+class CualFolder(model.SingleFileDirectoryFormat):CualFolder23,646
+    cual_ids = model.TextFileFormat('ids.txt', format=CualIDFile)cual_ids24,697
+    modified_ids = model.TextFileFormat(modified_ids25,763
+
+setup.py,727
+from setuptools import setup, find_packagessetup9,342
+from setuptools import setup, find_packagesfind_packages9,342
+import versioneerversioneer11,387
+    name="q2-cual-id",name14,413
+    version=versioneer.get_version(),version15,436
+    cmdclass=versioneer.get_cmdclass(),cmdclass16,474
+    packages=find_packages(),packages17,514
+    author="Anton Hibl",author18,544
+    author_email="antonhibl11@gmail.com",author_email19,569
+    description="Global 'Cual' ID toolkit plugin for QIIME2.",description20,611
+    license='BSD-3-Clause',license21,674
+    url="https://qiime2.org",url22,702
+    entry_points={entry_points23,732
+    package_data={package_data27,838
+    zip_safe=False,zip_safe32,927
+
+versioneer.py,4169
+from __future__ import print_functionprint_function280,12470
+    import configparserconfigparser282,12513
+    import ConfigParser as configparserconfigparser284,12557
+import errnoerrno285,12597
+import jsonjson286,12610
+import osos287,12622
+import rere288,12632
+import subprocesssubprocess289,12642
+import syssys290,12660
+class VersioneerConfig:VersioneerConfig293,12673
+def get_root():get_root297,12760
+def get_config_from_root(root):get_config_from_root336,14744
+    def get(parser, name):get348,15357
+class NotThisMethod(Exception):NotThisMethod365,15949
+LONG_VERSION_PY = {}LONG_VERSION_PY370,16109
+HANDLERS = {}HANDLERS371,16130
+def register_vcs_handler(vcs, method):  # decoratorregister_vcs_handler374,16146
+    def decorate(f):decorate376,16272
+def run_command(commands, args, cwd=None, verbose=False, hide_stderr=False,run_command385,16477
+def git_get_keywords(versionfile_abs):git_get_keywords946,36471
+def git_versions_from_keywords(keywords, tag_prefix, verbose):git_versions_from_keywords975,37583
+def git_pieces_from_vcs(tag_prefix, root, verbose, run_command=run_command):git_pieces_from_vcs1030,40359
+def do_vcs_install(manifest_in, versionfile_source, ipy):do_vcs_install1121,43853
+def versions_from_parentdir(parentdir_prefix, root, verbose):versions_from_parentdir1159,45092
+def versions_from_file(filename):versions_from_file1202,46444
+def write_to_version_file(filename, versions):write_to_version_file1219,47073
+def plus_or_dot(pieces):plus_or_dot1230,47473
+def render_pep440(pieces):render_pep4401237,47646
+def render_pep440_pre(pieces):render_pep440_pre1262,48528
+def render_pep440_post(pieces):render_pep440_post1278,48934
+def render_pep440_old(pieces):render_pep440_old1305,49816
+def render_git_describe(pieces):render_git_describe1327,50386
+def render_git_describe_long(pieces):render_git_describe_long1347,50900
+def render(pieces, style):render1367,51428
+class VersioneerBadRootError(Exception):VersioneerBadRootError1399,52526
+def get_versions(verbose=False):get_versions1403,52639
+def get_version():get_version1479,55280
+def get_cmdclass():get_cmdclass1484,55395
+    from distutils.core import CommandCommand1504,56549
+    class cmd_version(Command):cmd_version1506,56589
+        description = "report generated version string"description1507,56621
+        user_options = []user_options1508,56677
+        boolean_options = []boolean_options1509,56703
+        def initialize_options(self):initialize_options1511,56733
+        def finalize_options(self):finalize_options1514,56789
+        def run(self):run1517,56843
+        from setuptools.command.build_py import build_py as _build_py_build_py1544,58012
+        from distutils.command.build_py import build_py as _build_py_build_py1546,58092
+    class cmd_build_py(_build_py):cmd_build_py1548,58162
+        def run(self):run1549,58197
+        from cx_Freeze.dist import build_exe as _build_exe_build_exe1564,58878
+        class cmd_build_exe(_build_exe):cmd_build_exe1572,59264
+            def run(self):run1573,59305
+            from py2exe.distutils_buildexe import py2exe as _py2exe  # py3_py2exe1597,60341
+            from py2exe.distutils_buildexe import py2exe as _py2exe  # py3py31597,60341
+            from py2exe.build_exe import py2exe as _py2exe  # py2_py2exe1599,60444
+            from py2exe.build_exe import py2exe as _py2exe  # py2py21599,60444
+        class cmd_py2exe(_py2exe):cmd_py2exe1601,60511
+            def run(self):run1602,60546
+        from setuptools.command.sdist import sdist as _sdist_sdist1625,61583
+        from distutils.command.sdist import sdist as _sdist_sdist1627,61654
+    class cmd_sdist(_sdist):cmd_sdist1629,61715
+        def run(self):run1630,61744
+        def make_release_tree(self, base_dir, files):make_release_tree1638,62065
+def do_setup():do_setup1698,63777
+def scan_setup_py():scan_setup_py1780,67055
+            if "import versioneer" in line:versioneer1787,67280
+        print(" import versioneer")versioneer1803,67955
+    cmd = sys.argv[1]cmd1818,68476
+        errors = do_setup()errors1820,68521
+
+todo.html,0

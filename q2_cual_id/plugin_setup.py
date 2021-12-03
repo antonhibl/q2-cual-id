@@ -23,7 +23,7 @@ plugin = Plugin("cual-id",
 importlib.import_module("cualid")
 
 # Registering formats for directory structure, and short/long file formats
-plugin.register_formats(CualDirFormat, CualFile, LongCualFile)
+plugin.register_formats(CualFolder, CualIDFile)
 
 #plugin.register_semantic_types(IDs, WideIDs)
 
@@ -53,12 +53,35 @@ plugin.methods.register_function(
 # Cual Cleaning Function
 plugin.methods.register_function(
         function=q2_cual_id.actions.check_ids,
-        inputs={},
-        parameters={},
-        outputs=[()],
-        input_descriptions={},
-        parameter_descriptions={},
-        output_descriptions={},
+        inputs={
+            # existing ID artifact
+        },
+        parameters={
+            # The data to check against
+              # not sure how this is implemented but I think
+              # I can attach metadata that tracks this within the
+              # artifact somehow
+        },
+        outputs=[(
+            # Fixed ID Artifact
+              # structurally the exact same as the input,
+              # just fixed errors
+        )],
+        input_descriptions={
+            # the input artifact with IDs should be described here
+              # as well as any details about metadata the user may
+              # need to know
+        },
+        parameter_descriptions={
+            # Describe the data being cross-checked and how
+            # this transfers into the function from the input
+            # if necessary
+        },
+        output_descriptions={
+            # describe the returned fixed IDs, emphasize the
+            # way the structure is unchanging only the data is
+            # being munged
+        },
         name='Cual ID Cleaner',
         description=("Checks and fixes a given set of Cual IDs,"
                      "then returns this fixed set to the user.")
@@ -67,11 +90,21 @@ plugin.methods.register_function(
 # Barcode Generation Function
 plugin.visualizers.register_function(
         function=q2_cual_id.actions.generate_barcodes,
-        inputs={},
-        parameters={},
-        outputs=[()],
-        input_descriptions={},
-        parameter_descriptions={},
+        inputs={
+            # existing ID Artifact
+        },
+        parameters={
+            # visual appeal affects like title inclusing and ID sub-headers
+        },
+        outputs=[(
+            # new barcode visualization
+        )],
+        input_descriptions={
+            # description for the input existing IDs, generated seperately
+        },
+        parameter_descriptions={
+            # short description of ways the other parameters can affect the output visual
+        },
         name='Cual ID Bar Encoder',
         description=("Creates a set of barcodes given an error-free"
                      "set of Cual IDs, returns this as a visualizer"
@@ -81,12 +114,24 @@ plugin.visualizers.register_function(
 # Cual Transformer Function
 plugin.methods.register_function(
         function=q2_cual_id.actions.cual_transform,
-        inputs={},
-        parameters={},
-        outputs=[()],
-        input_descriptions={},
-        parameter_descriptions={},
-        output_descriptions={},
+        inputs={
+            #existing IDS here
+        },
+        parameters={
+            #length of transformed IDS
+        },
+        outputs=[(
+            # newly parsed IDs
+        )],
+        input_descriptions={
+            # input shorter IDs
+        },
+        parameter_descriptions={
+            # decribe how length parameter takes action
+        },
+        output_descriptions={
+            # short description describing how transform affects the IDs
+        },
         name='Cual ID Parser',
         description=("Parses longer globally unique IDs into their"
                      "shortened Cual IDs.")

@@ -13,13 +13,19 @@ from cualid.mint import create_ids
 from cualid.fix import fix_ids, format_output,
 from cualtypes import CualArtifact
 
-def cual_transform()->CualFolder:
+# this actually transformed the ID file which was initially generated
+# into the usable CualFolder Artifact
+def cual_transform(CualIDFile)->CualFolder:
     # Initialize local variables
     # parse the ID file into shortend "modified" ID file
     # package original length IDs and new modified IDs into a Folder
     # Return the new folder as the CualFolder Artifact
     return CualFolder
 
+# because this returns only a CualIDFile, I will need to handle
+# the calling of this function within some cual_transform() which
+# then generates a CualFolder that then stores this file alongside
+# any other metadata
 def generate_ids(
         NumbOfIDs,
         LenOfIDs
@@ -35,6 +41,10 @@ def generate_ids(
     # return qiime artifact
     return CualIDFile
 
+# This returns a visualizer, my thinking is to use this function
+# outside any pipeline, this is because the visualizer will not
+# actually be stored in the CualFolder which is our artifact, this
+# will store it as a seperate file.
 def generate_barcodes(
         input_ids,
         output_fp,
@@ -53,9 +63,13 @@ def generate_barcodes(
     # Return the visualizer artifact
     return CualVisualizer
 
+# Thinking it is best to pass in a whole CualFolder which can have
+# attached, any important data( the data to cross-check ) as metadata.
+# It then can return a Folder back and just edit the cualFile inside
+# if errors are discovered in its cross-reference.
 def check_ids(
-        CualArtifact
-        )->CualIDFile:
+        CualFolder
+        )->CualFolder:
     # initialize local variables and data, possible flags
     # extract id data from the provided artifact
     # use the fix_ids command to manage the id metadata from an artifact
