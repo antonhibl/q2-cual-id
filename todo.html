@@ -1,5 +1,3 @@
-<!DOCTYPE HTML>
-<utf8>
 <h1>Q2-Cual-ID</h1>
 <hr>
 <h3>TO DO LIST</h3>
@@ -35,3 +33,30 @@ clean up bugs and documentation after finished</p>
 <ol start="5">
 <li>Review with Evan and hopefully push into early testing online and start work on sphynx documentation.</li>
 </ol>
+<hr>
+<h1>Documentation</h1>
+<hr>
+<p><strong>ID Generation</strong></p>
+<blockquote>
+<p>ID generation should be handled by the <code>cual_gen_pl()</code> function,
+this function is actually a pipeline that will establish and set-up
+an artifact with a file directory format which holds an ID file and
+it's relevant metadata.</p>
+</blockquote>
+<blockquote>
+<p>Another way to do this is to perform the actions of the pipeline
+yourself, or perhaps you simply want to generate these IDs as a
+simple array type data-structure in a scientific notebook; these
+are both possible by using the functions <code>generate_ids()</code> and
+<code>cual_transform()</code> by themselves or selectively.</p>
+</blockquote>
+<p><strong>Fixing IDs</strong></p>
+<blockquote>
+<p>q2-cual-id packages up the ID File inside of a directory structure
+which also documents and stores metadata that is important when the
+plugin goes back to check and fix it's IDs if necessary. By
+attaching the metadata into the directory structure I can ensure
+users don't need to worry about the details of figuring out where
+the IDs to cross-reference against are, they can just pass in their
+artifact to the function and it handles the rest</p>
+</blockquote>
